@@ -15,6 +15,7 @@ void setup() {
 
 void draw() {
 	stroke(1);
+  fill(255);
   //starts random walking from 200,200
   rect(x, y, 10, 10);
   
@@ -22,6 +23,26 @@ void draw() {
   // You will need to make sure you dont draw more rectangles than the limit of steps
   //You'll need to use the Math.random() to decide how to create randomness in your drawing of rectangles.
   // Keep your canvas and rectangle width and height as I've given you
+   int r = (int)(Math.random() * 4);
+   if(r == 0){
+     fill(0, 0, 255);
+     x = x - 10;
+   }else if(r == 1){
+    fill(0, 0, 255);
+x = x + 10;
+   }else if( r == 2){
+     fill(0, 0, 255);
+     y = y + 10;
+   }else if( r == 3){
+      fill(0, 0, 255);
+     y = y - 10;
+   }
+
+   
+
+
+  
+ 
 
  
   
